@@ -18,7 +18,7 @@ class Binomial(Layer):
         super(Binomial, self).__init__(**kwargs)
 
     def call(self, x, mask=None):
-        return K.random_binomial(shape=K.shape(x), p=x):.
+        return K.random_binomial(shape=K.shape(x), p=x)
 
     def get_config(self):
         config = {'binomial':'binomial'}
